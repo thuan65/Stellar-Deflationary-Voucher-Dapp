@@ -12,9 +12,9 @@ By implementing a voucher issuance mechanism on the Stellar Blockchain network (
 The contract tightly binds administrative rights to the Store Admin account immediately upon deployment. The merchant will set the total token supply one time only, along with an immutable expiration deadline.
 
 ## Time-Bound Enforcement
-Hệ thống tích hợp thước đo thời gian thực của mạng lưới Blockchain (Stellar Ledger Timestamp). Khi khách hàng thực hiện đổi quà, hợp đồng sẽ tự động kiểm tra thời gian:
-- Nếu thời gian hiện tại vượt quá `deadline`, toàn bộ giao dịch sẽ bị khóa lại.
-- Phiếu đổi quà lập tức mất hiệu lực, ngăn chặn việc sử dụng phiếu quá hạn.
+The system integrates the blockchain network's real-time clock (Stellar Ledger Timestamp). When a customer attempts to redeem a voucher, the contract automatically verifies the time:
+- If the current time exceeds the deadline, the entire transaction is reverted and locked.
+- The voucher immediately becomes invalid, strictly preventing the usage of expired vouchers.
 
 ## Deflationary Burn Mechanism (`redeem`)
 The system integrates the blockchain network's real-time clock (Stellar Ledger Timestamp). When a customer attempts to redeem a voucher, the smart contract automatically verifies the time:
