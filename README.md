@@ -1,5 +1,5 @@
 # Title
-Stellar Deflationary Voucher System (voucher-contract)
+Stellar Deflationary Voucher Dapp (voucher-contract)
 
 # Project Description
 In traditional customer appreciation programs, physical paper vouchers/coupons or standard QR codes are highly vulnerable to counterfeiting, unauthorized duplication, and circulation fraud by merchants. This project was developed to eliminate these limitations entirely, making it an ideal solution for retail stores, fashion brands, coffee shops, or any business looking to operate a loyalty program.
